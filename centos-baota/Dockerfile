@@ -1,0 +1,7 @@
+FROM jupincu/centos-sshd:7.5.1084
+MAINTAINER Nopost (nopost@qq.com)
+COPY centos-baota/container-files /
+RUN cd /install && sh ./docker_build.sh
+EXPOSE 20 21 22 80 443 888 8888 
+ENTRYPOINT ["/config/bootstrap.sh"]
+
