@@ -1,4 +1,4 @@
-FROM jupincu/centos-sshd:7.5.1084
+FROM ccr.ccs.tencentyun.com/jupincu/centos-sshd:latest
 MAINTAINER Nopost (nopost@qq.com)
 COPY centos-baota/container-files /
 RUN cd /install && sh ./docker_build.sh
