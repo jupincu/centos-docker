@@ -1,4 +1,4 @@
-FROM ccr.ccs.tencentyun.com/jupincu/centos-baota:init
+FROM ccr.ccs.tencentyun.com/jupincu/centos-bt:init
 MAINTAINER Nopost (nopost@qq.com)
 COPY centos-baota/container-files /
 RUN cd /install && sh ./docker_build.sh
